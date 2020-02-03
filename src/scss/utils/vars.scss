@@ -2,11 +2,11 @@
    ========================================================================== */
 
 // Font
-$mainFont                : 'HelveticaNeueCyr', Helvetica, Arial, sans-serif; //'Montserrat'
+$mainFont                : 'Rubik', Helvetica, Arial, sans-serif; 
 
 // Size
-$mainFontColor           : #101010;
-$mainFontSize            : 18px;
+$mainFontColor           : #0c143d;
+$mainFontSize            : 15px;
 $mainFontWeight          : 400;
 $mainLineHeight          : 1.4;
 
@@ -16,6 +16,8 @@ $tableWidth              : 768px;
 $smTableWidth            : 640px;
 $phoneWidth              : 480px;
 $smPhoneWidth            : 320px;
+
+$mobileWidth             : 375px;
 
 /*
  All colors taken from:
