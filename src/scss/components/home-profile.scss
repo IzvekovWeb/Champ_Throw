@@ -1,0 +1,23 @@
+.home-profile {
+  @include flex(row, space-between, flex-start);
+  padding: 21px 32px 4px 32px;
+  &__info {
+    @include flex(column);
+    width: 73%;
+    padding-left: 15px;
+    &-name {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+    &-nic { 
+      padding-left: 13px;
+      .nic {
+        color: $primary-color;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 24px;
+      }
+    }
+  }
+}
