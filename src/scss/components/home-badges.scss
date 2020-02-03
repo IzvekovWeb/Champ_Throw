@@ -1,0 +1,35 @@
+.home-badges {
+  overflow: hidden;
+  padding: 0 10px;
+  .container {
+    @include flex;
+  }
+  &__badge {
+    @include flex(column, space-between, center);
+    @include size(103px);
+    padding: 5px 16px;
+
+
+    background: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 8px 16px rgba(12, 20, 61, 0.06);
+    &-title {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 10px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &-text {
+      @include flex(row, space-around, center);
+      width: 100%;
+      color: $neutral-secondary;
+      font-size: 9px;
+      font-weight: 300;
+      line-height: 11px;
+    }
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+  }
+}
