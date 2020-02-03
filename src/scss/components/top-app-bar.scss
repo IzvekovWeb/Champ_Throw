@@ -1,0 +1,22 @@
+.top-app-bar {
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
+
+  &__wrapper {
+    padding: 4px 32px;
+  }
+  &__logo {
+    @include flex(row, center, center);
+    &-title {
+      padding-left: 6px;
+    }
+  }
+  &__line {
+    width: 357px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    
+    margin: auto;
+  }
+}

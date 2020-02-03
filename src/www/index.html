@@ -5,27 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
-  <title>Webpack</title>
+  <title>Champ Throw</title>
 </head>
 <body>
   
   <div id="app">
 
-    <header></header>
+    <div class="top-app-bar"> 
+      <div class="content-wrapper top-app-bar__wrapper">
+        <div class="top-app-bar__cog">
+          <img src="www/img/cog.png" alt="Настройки">
+        </div>
+        <div class="top-app-bar__logo">
+          <img class="top-app-bar__logo-img" src="www/img/top-app-logo.png" alt="Лого">
+          <h1 class="h1 top-app-bar__logo-title">Champ Throw</h1>
+        </div>
+        <div class="top-app-bar__location">
+          <img src="www/img/location.png" alt="Локация">
+        </div>
+      </div>
+      <div class="top-app-bar__line"></div>
+    </div>
+    <!-- /.top-app-bar -->
 
     <div class="wrapper">
-
-      <section id="main">
-          <h1>Webpack</h1> 
-          <h2>Section example 2</h2>  
-          <button @click="component = !component">Show vue component</button>
-      </section>
-
-      <example-component v-show="component"></example-component>
-    
+ 
     </div>
     
-    <footer></footer>
+    <div class="bottom-tab-bar"></div>
+    <!-- /.bottom-tab-bar -->
 
   </div>
   <!-- /.app -->
