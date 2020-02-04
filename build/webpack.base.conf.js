@@ -143,6 +143,12 @@ module.exports = {
       filename: './screen-5.html',
       inject: true
     }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: `${PATHS.src}/www/screen-16.html`,
+      filename: './screen-16.html',
+      inject: true
+    }),
     // new FaviconsWebpackPlugin({
     //   logo: `${PATHS.src}/static/favicon.png`,
     //   outputPath: '/static/favicons',

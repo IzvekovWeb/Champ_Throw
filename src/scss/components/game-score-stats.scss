@@ -1,0 +1,20 @@
+.game-score-stats {
+  padding: 20px 7px 7px 7px;
+  &__main {
+    @include flex(row, space-between, center);
+    padding: 0 13px 13px 13px;
+
+  }
+  &__inner {
+    @include flex(row, space-around, flex-start);
+    box-shadow: 0 8px 12px rgba(12, 20, 61, 0.06);
+    flex-wrap: wrap;
+    background-color: $bg-dark;
+    border-radius: 6px;
+  }
+  &__score {
+    width: 33%;
+    padding: 0 10px;
+  }
+}
+

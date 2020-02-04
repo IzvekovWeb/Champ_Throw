@@ -86,6 +86,50 @@ section,
   // max-width: $desktopWidth;
 }
 
+.block {
+  margin-top: 5px;
+  padding: 20px;
+  &:last-child {
+    margin-bottom: 5px;
+  }
+  &.block--rounded {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(12, 20, 61, 0.06);
+    
+  }
+}
+
+.rank {
+  @include flex(column, center, center);
+  margin-top: 10px;
+  &__title {
+    @include flex(column, center, center);
+    text-align: center;
+    color: $neutral-secondary;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 10px;
+  }
+  &__value {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+
+.arrow {
+  cursor: pointer;
+  &__img {
+    @include size(13px, auto);
+  }
+  &.arrow--active {
+    .arrow__img {
+      transform: rotate(180deg);
+    }
+  }
+}
 // Modules:
 // example: @import "modules/my-module.scss";
 
@@ -103,3 +147,4 @@ section,
 @import "./components/tasks";
 @import "./components/warning-calc-time";
 @import "./components/score-stats";
+@import "./components/game-score-stats";
