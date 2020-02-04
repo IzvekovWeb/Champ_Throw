@@ -21,4 +21,11 @@
       font-weight: 500;
     }
   }
+  &__member-since {
+    color: $neutral-secondary;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+  }
 }

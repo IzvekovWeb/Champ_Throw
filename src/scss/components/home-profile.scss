@@ -1,6 +1,9 @@
 .home-profile {
   @include flex(row, space-between, flex-start);
   padding: 21px 32px 4px 32px;
+  &__img {
+    @include size(84px);
+  }
   &__info {
     @include flex(column);
     width: 73%;
@@ -9,6 +12,9 @@
       font-size: 22px;
       font-weight: 500;
       line-height: 20px;
+      &.home-profile__info-name--guild {
+        color: $primary-color
+      }
     }
     &-nic { 
       padding-left: 13px;
@@ -17,7 +23,11 @@
         font-size: 15px;
         font-weight: 300;
         line-height: 24px;
+        &.nic--hidden {
+          display: none;
+        }
       }
+      
     }
   }
 }
