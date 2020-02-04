@@ -1,0 +1,91 @@
+.score-stats {
+  @include flex(row, space-between, flex-start);
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 12px rgba(12, 20, 61, 0.06);
+  padding: 10px 20px;
+  margin-top: 5px;
+  &:last-child {
+    margin-bottom: 5px;
+  }
+  &__logo {
+    @include flex(column, center, center);
+    width: 60px;
+    padding: 10px 5px;
+    &-img {
+      @include size(50px);
+    }
+    &-text {
+      color: $neutral-secondary;
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 10px;
+      text-align: center;
+    }
+  }
+  &__table {
+    @include flex(column, space-around, center);
+    width: 75%;
+  }
+  &__daily,
+  &__weekly,
+  &__monthly,
+  &__yearly  {
+    @include flex(row, space-around, center);
+    width: 100%;
+    &.score-stats__daily--guild,
+    &.score-stats__weekly--guild,
+    &.score-stats__monthly--guild,
+    &.score-stats__yearly--guild {
+      margin-top: 5px;
+    }
+  }
+  &__period {
+    @include flex(row, center, center);
+    width: 60px;
+    color: $primary-color;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 10px;
+  } 
+  &__person{
+    @include flex(row, center, center);
+
+  }
+  &__score,
+  &__rank {
+    @include flex(column, center, center);
+    margin-top: 10px;
+    &.score-stats__rank--guild {
+      @include flex(column, center, flex-start);
+      margin-top: 0;
+      margin-left: 4px;
+    }
+  }
+  &__title {
+    max-width: 50px;
+    text-align: center;
+    color: $neutral-secondary;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 10px;
+  }
+  &__value {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    &.score-stats__value--guild {
+      line-height: 14px;
+    }
+  }
+  &__nic {
+    color: $primary-color;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 12px;
+  }
+  &__img {
+    @include size(40px);
+  }
+}
