@@ -115,16 +115,22 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename:  `${PATHS.assets}css/[name].[hash].css`
     }),
+    new CopyWebpackPlugin([
+      { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img`},
+      { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts`}
+    ]),
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/www/index.html`,
       filename: './index.html',
       inject: true
     }),
-    new CopyWebpackPlugin([
-      { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img`},
-      { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts`}
-    ]),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: `${PATHS.src}/www/screen-3.html`,
+      filename: './screen-3.html',
+      inject: true
+    }),
     // new FaviconsWebpackPlugin({
     //   logo: `${PATHS.src}/static/favicon.png`,
     //   outputPath: '/static/favicons',

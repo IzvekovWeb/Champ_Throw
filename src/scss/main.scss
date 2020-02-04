@@ -26,6 +26,7 @@ body {
 
   max-width: $mobileWidth;
   margin-top: 100px;
+  margin-bottom: 100px;
   width: 100%;
 }
 
@@ -65,9 +66,9 @@ section,
   display: flex;
   flex-direction: column;
   padding: 0 10px; 
-  // margin: 0 auto;
-  // min-height: 100vh;
-  // min-width: 100vh;
+  .title {
+    padding: 5px 0;
+  }
 }
 
 .content-wrapper {
@@ -99,3 +100,4 @@ section,
 @import "./components/home-badges";
 @import "./components/mini-tab-bar";
 @import "./components/score";
+@import "./components/tasks";

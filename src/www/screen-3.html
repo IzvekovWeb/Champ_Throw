@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Champ Throw</title>
+</head>
+<body>
+  
+  <div id="app">
+
+    <section class="top-app-bar"> 
+      <div class="content-wrapper top-app-bar__wrapper">
+        <div class="top-app-bar__cog">
+          <img src="www/img/cog.png" alt="Settings">
+        </div>
+        <div class="top-app-bar__logo">
+          <div class="top-app-bar__logo-img">
+            <img src="www/img/top-app-logo.png" alt="Лого">
+          </div>
+          <h1 class="h1 top-app-bar__logo-title">Champ Throw</h1>
+        </div>
+        <div class="top-app-bar__location">
+          <img src="www/img/location.png" alt="Location">
+        </div>
+      </div>
+      <div class="top-app-bar__line"></div>
+    </section>
+    <!-- /.top-app-bar -->
+
+    <section class="home-profile">
+      <div class="home-profile__avatar">
+        <img src="www/img/avatar.png" alt="Avatar">
+      </div>
+      <div class="home-profile__info">
+        <div class="home-profile__info-name">Erik Padamans</div>
+        <div class="home-profile__info-nic">
+          <span class="nic">@nic_name</span>
+        </div>
+        <div class="progress">
+          <div class="progress__level">
+            <span class="progress__level-text">Level</span>
+            <span class="progress__level-number">22</span>
+          </div>
+          <div class="progress__bar">
+            <div class="progress__bar progress__bar--fill"></div>
+            <div class="progress__bar-text">
+              <span class="progress__bar-text--now">2202156</span>
+              <span class="progress__bar-text-separator">/</span>
+              <span class="progress__bar-text--full">2300000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.home-profile -->
+
+    <section class="home-stats">
+      <div class="home-stats__block home-stats__year">
+        <span class="home-stat home-stat--light">Year Score</span>
+        <span class="home-stat home-stat--dark">2202156</span>
+      </div>
+      <div class="home-stats__block home-stats__rivals">
+        <span class="home-stat home-stat--light">Rivals</span>
+        <span class="home-stat home-stat--dark">220</span>
+      </div>
+      <div class="home-stats__block home-stats__guild">
+        <span class="home-stat home-stat--light">GUILD</span>
+        <span class="home-stat home-stat--dark">2</span>
+      </div>
+      <div class="home-stats__block home-stats__played-games">
+        <span class="home-stat home-stat--light">played-games</span>
+        <span class="home-stat home-stat--dark">569874</span>
+      </div>
+    </section>
+    <!-- /.home-stats -->
+
+    <section class="mini-tab-bar">
+      <div class="mini-tab-bar__tabs">
+        <div class="mini-tab-bar__tab">
+          <span class="mini-tab-bar__tab-text">FEED</span>
+          <span class="mini-tab-bar__tab-content">10</span>
+        </div>
+        <div class="mini-tab-bar__tab mini-tab-bar__tab--active">
+          <span class="mini-tab-bar__tab-text">TASK</span>
+          <span class="mini-tab-bar__tab-content">100</span>
+        </div>
+        <div class="mini-tab-bar__tab">
+          <span class="mini-tab-bar__tab-text">DATA</span>
+        </div>
+      </div>
+      <div class="mini-tab-bar__line"> </div>
+    </section>
+    <!-- /.mini-tab-bar -->
+
+    <section class="wrapper">
+      <h2 class="title">complict task</h2>
+
+      <div class="task task-completed">
+        <div class="task__btn-wrapper">
+          <button class="task-completed__button btn btn-success">Collect</button>
+        </div>
+        <div class="task__text-bold task-completed__text-bold">New Location</div>
+        <div class="task__descr task-completed__descr">
+          <div class="task-completed__img">
+            <img src="www/img/map2.png" alt="Complete Task">
+          </div>
+          <div class="task__text task-completed__text">
+            <span class="task__text-element">S +1500</span>
+            <span class="task__text-element">G +1300</span>
+          </div>
+        </div>
+      </div>
+      <!-- /.task-completed -->
+
+      <div class="task task-completed">
+        <div class="task__btn-wrapper">
+          <button class="task-completed__button btn btn-success">Collect</button>
+        </div>
+        <div class="task__text-bold task-completed__text-bold">New Location</div>
+        <div class="task__descr task-completed__descr">
+          <div class="task-completed__img">
+            <img src="www/img/map2.png" alt="Complete Task">
+          </div>
+          <div class="task__text task-completed__text">
+            <span class="task__text-element">S +1500</span>
+            <span class="task__text-element">G +1300</span>
+          </div>
+        </div>
+      </div>
+      <!-- /.task-completed -->
+
+      
+      <h2 class="title">NEW task</h2>
+
+      <div class="task task-new">
+        <div class="task__btn-wrapper task-new__btn-wrapper">
+          <button class="task-new__button btn btn-default">TO Start</button>
+        </div>
+        
+        <div class="task__descr task-new__descr">
+          <div class="task__text-bold task-new__text-bold">BROUGHT a Friend</div>
+          <div class="task__text-light task-new__text-light">
+            Hey, could someone recommend me to explore? In Riga, please.
+          </div>
+          <div class="task__text task-new__text">
+            <span class="task__text-element">S +1500</span>
+            <span class="task__text-element">G +1300</span>
+          </div>
+        </div>
+      </div>
+      <!-- /.task-new -->
+
+      <div class="task task-new">
+        <div class="task__btn-wrapper task-new__btn-wrapper">
+          <button class="task-new__button btn btn-default">TO Start</button>
+        </div>
+        
+        <div class="task__descr task-new__descr">
+          <div class="task__text-bold task-new__text-bold">BROUGHT a Friend</div>
+          <div class="task__text-light task-new__text-light">
+            Hey, could someone recommend me to explore? In Riga, please.
+          </div>
+          <div class="task__text task-new__text">
+            <span class="task__text-element">S +1500</span>
+            <span class="task__text-element">G +1300</span>
+          </div>
+        </div>
+      </div>
+      <!-- /.task-new -->
+
+    </section>
+    <!-- /.wrapper -->
+    
+  </div>
+  <!-- /.app -->
+</body>
+</html>
