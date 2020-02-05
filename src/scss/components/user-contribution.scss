@@ -1,0 +1,106 @@
+.user-contribution {
+  @include flex(column, center, flex-start);
+  padding: 0 10px; 
+  &__user, 
+  &__player {
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(12, 20, 61, 0.06);
+    width: 100%; 
+  }
+  .profile {
+    @include flex(row, space-between, flex-end);
+    padding: 4px 20px 4px 20px;
+    &__avatar {
+      max-width: 84px;
+      @include size(100%, auto); 
+    }
+    &__info {
+      @include flex(column);
+      min-height: 84px;
+      width: 73%;
+      padding-left: 15px;
+      &-name {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+      &-nic { 
+        .nic {
+          color: $primary-color;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 24px;
+          &.nic--hidden {
+            display: none;
+          }
+        }
+      }
+      &-rung {
+        @include flex(row, space-between, flex-start);
+        color: $neutral-secondary;
+        font-size: 15px;
+        line-height: 24px;
+        &.profile__info-rung--top {
+          color: $danger-top;
+        }
+      }
+      &-text {
+        font-weight: 700;
+        margin-right: 8px;
+      }
+      &-status {
+        color: $neutral-secondary;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+    }
+    &__status {
+      @include flex(column, center, flex-end);
+    }
+    &__rank {
+      @include flex(column, center, center);
+      width: 100%;
+      &-title {
+        @include flex(row, space-around, center);
+        text-align: center;
+        color: $neutral-secondary;
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 10px;
+      }
+      &-value {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    } 
+    &__level {
+      @include flex(row, space-between, flex-start);
+      width: 100%;
+      text-align: center;
+      line-height: 20px;
+      &-text{
+        font-weight: 300;
+        margin-right: 4px;
+      }
+      &-number {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__line{
+    width: 357px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    
+    margin: 5px auto;
+  }
+}
