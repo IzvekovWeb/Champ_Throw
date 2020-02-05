@@ -169,6 +169,12 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       hash: false,
+      template: `${PATHS.src}/www/screen-10.html`,
+      filename: './screen-10.html',
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      hash: false,
       template: `${PATHS.src}/www/screen-16.html`,
       filename: './screen-16.html',
       inject: true
