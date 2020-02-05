@@ -53,3 +53,10 @@
     }
   }
 }
+
+@mixin bonus {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+}
