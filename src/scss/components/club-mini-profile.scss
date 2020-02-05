@@ -45,7 +45,7 @@
 
   // Stats
 
-  .club-mini-profile__home-stats {
+  .club-mini-profile__stats {
     @include flex(row, space-between, center);
     background: #ffffff;
     border-radius: 3px;
@@ -53,10 +53,10 @@
     box-shadow: none;
     height: 35px;
     width: 100%;
-    .home-stats__block {
+    .stats__block {
       @include flex(column, space-around, center);
     }
-    .home-stat {
+    .stat {
       font-size: 11px;
       text-transform: uppercase;
       &--light {
@@ -72,7 +72,7 @@
   }
 
   // home profile
-  .home-profile {
+  .profile {
     @include flex(row, space-between, flex-start);
     padding: 0;
     margin-bottom: 10px;
@@ -88,7 +88,7 @@
         font-size: 22px;
         font-weight: 500;
         line-height: 20px;
-        &.home-profile__info-name--guild {
+        &.profile__info-name--guild {
           color: $primary-color
         }
       }
