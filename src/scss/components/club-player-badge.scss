@@ -1,0 +1,43 @@
+.club-player-badge {
+  @include flex(row,space-between,flex-start);
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 15px;
+  padding-right: 6px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 8px 12px rgba(12, 20, 61, 0.06);
+  &:last-child {
+    margin-bottom: 5px;
+  }
+  &__title {
+    @include flex;
+    max-width: 50%;
+    &-text {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 18px;
+    }
+  }
+  &__avatars {
+    @include flex(row, space-around,flex-start);
+  }
+  &__avatar {
+    @include flex(column, flex-start, center);
+    &-img {
+      max-width: 40px;
+      @include size(100%, 40px);
+    }
+    &-text {
+      @include flex(row, space-between,flex-start);
+      min-width: 77px;
+      font-size: 9px;
+      font-weight: 700;
+      line-height: 11px;
+    }
+
+  }
+  
+}

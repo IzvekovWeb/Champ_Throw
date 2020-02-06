@@ -8,6 +8,9 @@
   .score {
     margin-top: 15px;
   }
+  &__logo {
+    margin-left: 10px;
+  }
   &__img {
     @include size(40px);
   }
@@ -33,6 +36,7 @@
   }
 
   .arrow {
+    margin-right: 10px;
     cursor: pointer;
     &__img {
       @include size(13px, auto);
