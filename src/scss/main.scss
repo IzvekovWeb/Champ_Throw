@@ -35,7 +35,10 @@ body {
     display: none;
   }
 }
-
+#app {
+  position: relative;
+  width: inherit;
+}
 *,
 *:before,
 *:after {
@@ -172,3 +175,4 @@ section,
 @import "./components/club-task-progress";
 @import "./components/welcome-start";
 @import "./components/welcome-connection";
+@import "./components/bottom-tab-bar";

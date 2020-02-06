@@ -1,0 +1,75 @@
+.bottom-tab-bar {
+  @include flex(row, space-around, flex-start);
+  position: sticky;
+  bottom: -1px; 
+  @include size(inherit, 60px);
+  background-color: #ffffff;
+  box-shadow: 0 -4px 8px rgba(12, 20, 61, 0.02);
+  z-index: 5;
+  &__img {
+    max-width: 24px;
+    &.bottom-tab-bar__img--big {
+      max-width: 30px; 
+    }
+  }
+  &__left,
+  &__right {
+    width: 50%;
+    @include flex(row, space-around, flex-end);
+  }
+  &__feed, 
+  &__guild, 
+  &__rating, 
+  &__shop {
+    @include flex(row, center, center);
+    cursor: pointer;
+    width: 25%;
+    padding-top: 10px;
+    border-top: 2px solid transparent;
+    &.bottom-tab-bar--active {
+      border-top: 2px solid $primary-color;
+    }
+  }
+
+  &__center {
+    top: -17px;
+    background: #ffffff;
+    border-radius: 100%;
+    padding: 8px;
+    border: 5px solid #ebedf3;
+    box-shadow: 0 8px 12px rgba(64, 113, 255, 0.2);
+    position: relative;
+    z-index: 10;
+    
+    cursor: pointer;
+    
+    &-img {
+      max-width: 25px;
+    }
+  } 
+  &:before {
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0);
+    border-radius: 100%;
+    padding: 23px;
+    top: -22px;
+    left: -11px;
+    border: 6px solid #e4e7ef;
+    z-index: -1;
+    left: 50%;
+    margin-left: -29px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    padding: 13px 30px 23px;
+    top: 0px;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 2;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    }
+}
