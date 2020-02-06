@@ -221,6 +221,18 @@ module.exports = {
       filename: './welcome-1.html',
       inject: true
     }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: `${PATHS.src}/www/welcome-2.html`,
+      filename: './welcome-2.html',
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: `${PATHS.src}/www/welcome-3.html`,
+      filename: './welcome-3.html',
+      inject: true
+    }),
     
     // new FaviconsWebpackPlugin({
     //   logo: `${PATHS.src}/static/favicon.png`,
