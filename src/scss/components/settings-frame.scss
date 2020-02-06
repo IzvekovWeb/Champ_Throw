@@ -1,0 +1,25 @@
+.settings-frame {
+  @include flex(row, flex-start, center);
+  flex-wrap: wrap;
+  &__frame {
+    width: 33%;
+    @include flex(row, center, center);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    &.settings-frame__frame--active {
+      .settings-frame__img:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        right: -18px;
+        @include size(63px, 52px);
+        background-image: url("../www/img/check-double.png");
+      }
+    }
+  }
+  &__img {
+    max-width: 84px;
+    @include size(100%, auto);
+    position: relative;
+  }
+}
